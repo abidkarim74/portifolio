@@ -11,14 +11,15 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/teaching' element={<Teaching />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/skills' element={<Skills />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/teaching" element={<Teaching />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
 
-
+        {/* ✅ ADD THIS */}
+        <Route path="*" element={<HomePage />} />
       </Route>
     </Routes>
   )
