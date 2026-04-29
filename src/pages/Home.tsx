@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import meImage from "../assets/me.jpeg";
+import resume from "../assets/resume.pdf"
+
 
 const PageStyles = () => (
   <style>{`
@@ -723,7 +725,7 @@ export default function HomePage() {
             <div className="hero-actions anim-fade-up-4">
               <Link to="/contact" className="btn btn-primary">Let&apos;s Connect →</Link>
               <Link to="/projects" className="btn btn-ghost">View Projects</Link>
-              <a href="/resume.pdf" download className="btn btn-ghost">↓ Resume</a>
+              <a href={resume} download className="btn btn-ghost">↓ Resume</a>
             </div>
           </div>
 

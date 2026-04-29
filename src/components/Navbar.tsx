@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import resume from "../assets/resume.pdf"
 
 interface NavLink {
   label: string;
@@ -571,7 +572,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="/resume.pdf"
+          href={resume}
           download
           className="drawer-resume"
           style={{ animationDelay: `${NAV_LINKS.length * 0.055}s` }}
